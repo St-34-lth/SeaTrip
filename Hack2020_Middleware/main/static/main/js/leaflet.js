@@ -56,24 +56,6 @@ angular.module('myApp', ['ngMaterial']).config(function($interpolateProvider) {
       method:'GET',
       url:'./static/main/js/new.geojson'
     }).then(function(response){
-console.log(response)
-
-
-    // function getColor(d){
-    //   return '#0033cc';
-    // }
-    //
-    // function style(feature) {
-    //     return {
-    //         fillColor: getColor(feature),
-    //         weight: 2,
-    //         opacity: 1,
-    //         color: 'white',
-    //         dashArray: '3',
-    //         fillOpacity: 0.7
-    //     };
-    // }
-    // console.log(L.geoJSON(response).addTo(mymap));
     L.geoJSON(response).addTo(mymap);
     });
   };
